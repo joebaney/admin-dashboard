@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+h4 {
+  margin: 0 0 4px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(200px, 250px) 1fr;
+}
+
+/* ---------------------------------------Left Navigation Bar------------------------------------------- */
+.sidebar {
+  background-color: #1992d4;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+/* downloaded the wrong logo size for this one, so just matching it to the others */
+.profile-logo {
+  width: 36px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 4px;
+  border-radius: 6px;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.top-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.top-content span {
+  font-size: 24px;
+}
+
+.upper-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.upper-links li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lower-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.lower-links li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* -----------------------------------------Header------------------------------------------- */
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding: 12px 60px;
+}
+
+.top-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.search img,
+.bell {
+  filter: brightness(0);
+}
+
+.search-bar {
+  flex: 1;
+  max-width: 700px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #e2e8f0;
+  border: 1px solid;
+}
+
+.bell {
+  width: 28px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-info h2 {
+  font-size: 20px;
+}
+
+.profile-image {
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+}
+
+.lower-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding-top: 20px;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.lower-profile-information {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.large-profile-image {
+  border: 1px solid;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  background-color: grey;
+}
+
+.profile-text {
+  line-height: 0.5;
+}
+
+button {
+  padding: 12px 28px;
+  border-radius: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #1992d4;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.upload-buttons {
+  display: flex;
+  gap: 40px;
+}
+
+/* --------------------------------------------main content section---------------------------------- */
+.main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: #e2e8f0;
+  padding: 20px 60px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  border-left: 10px solid #f0b429;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-text {
+  width: 90%;
+  padding-left: 20px;
+}
+
+.card-text p {
+  color: #6b7280;
+}
+
+.card-logos {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  filter: brightness(0);
+  padding-right: 10px;
+}
+
+.heart {
+  width: 32px;
+}
+
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.announcements {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.announcement-card-bottom {
+  border-bottom: 1px solid #6b7280;
+  padding-top: 20px;
+}
+
+.announcement-card {
+  padding: 10px;
+}
+
+.trending-cards {
+  background-color: #fff;
+  padding: 20px 20px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.trending-cards .profile-image {
+  width: 50px;
+  height: 50px;
+}
+
+.trending-card {
+  display: flex;
+  gap: 20px;
+}
+
+.trending-text p:last-child {
+  color: #6b7280;
+}
